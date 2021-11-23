@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qykhhr.dujiaoshouservice.mapper.UserMapper">
+
+    <update id="updateHeadPortrait" parameterType="string">
+        UPDATE user SET head_portrait=#{headPortrait} WHERE uid=#{uid}
+    </update>
+
+    <update id="updateUserNickName" parameterType="string">
+        UPDATE user SET nick_name=#{nickName} WHERE uid=#{uid}
+    </update>
+
+    <update id="updateUserPassword" parameterType="string">
+        UPDATE user SET password=#{password} WHERE uid=#{uid}
+    </update>
+
+
+</mapper>
