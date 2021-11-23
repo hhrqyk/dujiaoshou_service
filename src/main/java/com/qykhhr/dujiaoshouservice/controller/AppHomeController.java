@@ -18,6 +18,7 @@ public class AppHomeController {
     @AccessLimit(seconds = 3, maxCount = 1) //15秒内 允许请求3次
     public R getImageList(){
         AppHomeData appHome = appHomeService.findAppHome();
+        System.out.println("test git3");
         return R.ok().data("appHome",appHome);
     }
 
